@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Akh-9l-eD6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="pJP-gV-v6N">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="Akh-9l-eD6" customClass="LoginViewController" customModule="Pokeball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ObL-PH-C53">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g13-4d-QbK">
+                                <rect key="frame" x="120" y="104" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ujy-KA-5vK"/>
+                                    <constraint firstAttribute="width" constant="135" id="gGQ-gi-Ma3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxq-Wg-BuR">
+                                <rect key="frame" x="95" y="238" width="185" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="XUx-G6-OUX"/>
+                                    <constraint firstAttribute="width" constant="185" id="aOH-kI-yVu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap to start typing" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-ee-nTF">
+                                <rect key="frame" x="117.5" y="319" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XuL-hp-T2B"/>
+                                    <constraint firstAttribute="width" constant="140" id="pQa-59-j9C"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-YQ-W3l">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.89635567532645333" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SMb-aa-UvF"/>
+                                    <constraint firstAttribute="width" constant="375" id="vYT-aU-dmN"/>
+                                </constraints>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonContinue:" destination="Akh-9l-eD6" eventType="touchUpInside" id="JWB-5Q-y3C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g13-4d-QbK" firstAttribute="centerX" secondItem="yFk-ee-nTF" secondAttribute="centerX" id="I7C-AL-FLs"/>
+                            <constraint firstItem="g13-4d-QbK" firstAttribute="centerX" secondItem="GYm-YQ-W3l" secondAttribute="centerX" id="MPd-Z4-f1f"/>
+                            <constraint firstItem="g13-4d-QbK" firstAttribute="top" secondItem="JcA-A7-iCA" secondAttribute="top" constant="84" id="WRx-48-fBD"/>
+                            <constraint firstItem="g13-4d-QbK" firstAttribute="centerX" secondItem="ObL-PH-C53" secondAttribute="centerX" id="a9L-us-Zx7"/>
+                            <constraint firstItem="GYm-YQ-W3l" firstAttribute="bottom" secondItem="JcA-A7-iCA" secondAttribute="bottom" id="cJi-Bt-Lr7"/>
+                            <constraint firstItem="g13-4d-QbK" firstAttribute="centerX" secondItem="fxq-Wg-BuR" secondAttribute="centerX" id="hxo-1V-Iyp"/>
+                            <constraint firstItem="fxq-Wg-BuR" firstAttribute="top" secondItem="ObL-PH-C53" secondAttribute="top" constant="238" id="i3o-V5-55J"/>
+                            <constraint firstItem="yFk-ee-nTF" firstAttribute="top" secondItem="fxq-Wg-BuR" secondAttribute="bottom" constant="65" id="mLn-4B-ipa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JcA-A7-iCA"/>
+                    </view>
+                    <connections>
+                        <outlet property="usernameTextField" destination="yFk-ee-nTF" id="HWD-qb-21m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKa-6B-398" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-99.400299850074973"/>
+        </scene>
+    </scenes>
+</document>
